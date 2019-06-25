@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Grade Table</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href='option2_css.css' type='text/css' rel='stylesheet'/>
+    <script src='jquery-3.2.1.min.js' type="text/javascript"></script>
+   	<script src='option2_javascript.js' type="text/javascript"></script>
+</head>
+<body>
+	<form id='gradeTable' name="gradeTable">
+		<ul id='inputInfor'>
+			<li><span class='inputIndex'>Họ tên</span><input type='text' name="fullName" size='20'><span class='inputInstruct'>Họ tên bắt buộc nhập</span></li>
+			<li><span class='inputIndex'>Lớp</span><input type='text' name="learnClass"><span class='inputInstruct'>Lớp học bắt buộc nhập</span></li>
+			<li><span class='inputIndex'>Điểm Toán</span><input type='text' name="maths"><span class='inputInstruct'>Điểm toán phải nhập và phải là số trong khoảng từ 0 đến 10</span></li>
+			<li><span class='inputIndex'>Điểm Lý</span><input type='text' name="physics"><span class='inputInstruct'>Điểm lý phải nhập và phải là số trong khoảng từ 0 đến 10</span></li>
+			<li><span class='inputIndex'>Điểm Hóa</span><input type='text' name="chemistry"><span class='inputInstruct'>Điểm hóa phải nhập và phải là số trong khoảng từ 0 đến 10</span></li>
+			<li><input class='process' id='button1' type='button' name="send" value='Nhập'></li>
+		</ul>
+		<ul id='notify'>
+		</ul>
+	</form>
+	
+	<section>
+		<h2 id='title'>Danh sách học viên</h2>
+		<div class='table'>
+			<table>
+				<tr>
+					<th class='indexCol'>STT</th>
+					<th class='studentCol'>Họ tên</th>
+					<th class='mathsCol'>Toán</th>
+					<th class='physicsCol'>Lý</th>
+					<th class='chemCol'>Hóa</th>
+					<th class='averCol'>Trung Bình</th>
+				</tr>
+			</table>
+			<input class='process' type='button' id='average' value='Tính TB'>
+			<input class='process' type='button' id='goodStudent' value='Tìm HSG'>
+		</div>
+	</section>
+
+
+
+</body>
+</html>

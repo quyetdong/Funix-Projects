@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+	font-weight: normal;
+}
+
+form {
+	float: left;
+	width: 55%;
+	margin: 2em 0.5em;
+	border: 1px solid black;
+	font-size: 1em;
+}
+
+ul {
+	list-style-type: none;
+	padding: 1.5em 1em 2em 3em;
+}
+
+input.process {
+	background-color: transparent;
+	border: none;
+}
+
+div.table .process {
+	display: block;
+	margin-right: 2em;
+	margin-top: 2em;
+}
+
+#gradeTable li {
+	margin: 1.2em 0;
+}
+
+#button1 {
+	margin-left: 7em;
+}
+
+#title {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+ul#notify {
+	padding-top: 0;
+	list-style-type: square;
+	color: red;
+}
+
+span.inputIndex {
+	display: inline-block;
+	width: 5em;
+}
+
+span.inputInstruct {
+	padding-left: 0.2em;
+}
+
+section {
+	display: inline-block;
+	margin-top: 0.5em;
+	width: 43%;
+}
+
+.table {
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 0.2em;
+	padding: 1em 1em;
+}
+
+table, tr {
+	border-collapse: collapse;
+}
+
+table {
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	width: 98%;
+}
+
+th, td {
+	word-break: break-all;
+	border: 1px solid black;
+	border-bottom: 0;
+	border-right: 0;
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+td {
+	height: auto;
+}
+
+.indexCol{
+	width: 4em;
+}
+
+.studentCol {
+	width: 12em;
+}
+
+.mathsCol {
+	width: 4.5em;
+}
+
+.physicsCol {
+	width: 4em;
+}
+
+.chemCol {
+	width:4em;
+}
+
+.averCol {
+	width: 6em;
+}
+
+td.studentCol {
+	text-align: left;
+	padding: 0 0.4em;
+}
+
+.studentHightLight {
+	color: red;
+}

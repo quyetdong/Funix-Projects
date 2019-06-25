@@ -1,0 +1,23 @@
+/* CSS file */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 2em 10em 0 10em;
+}
+
+
+span {
+	font-weight: bold;	
+}
+
+span.inform {
+	font-weight: normal;
+}
+
+div#nextbutton {
+	direction: rtl;
+}

@@ -1,0 +1,99 @@
+﻿* {
+	box-sizing: border-box;
+	margin: 0px; 
+	padding: 0px;
+}
+
+body {	
+	width: 100%;
+	padding: 0px;
+	margin: auto;
+}
+
+nav {padding-left: 0.5em;}
+
+span.input {
+	width: 100px;
+	display: inline-block;
+	color: black;
+}
+
+nav li {
+	list-style-type: default;
+	display: inline-block;
+	padding: 0.3em;
+}
+
+nav a {
+	color: black;
+	font-size: 0.9em;
+	font-family: cursive, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:hover {color: blue;}
+ 
+#content {
+	padding: 1.5em 1em ;
+}
+
+span {color: red;}
+
+form li {
+	list-style-type: none;
+	font-size: 1.2em;
+	padding-top: 0.3em;
+}
+
+input {
+	list-style-type: none;
+	font-size: 1em;
+}
+
+form div input {
+	margin: 0.2em 0 1em;
+	padding: 0.1em 0.5em;
+	background-color: #F5F5F5;
+	border: 1px solid black;
+	font-size: 1em;
+	font-family: sans-serif;
+	border-radius: 3px;
+	/* background: radial-gradient(#eee,#f9f9f9); */
+}
+
+form div input:active {background-color: lightblue; margin-left: 0.1em;}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* For tablet screen */
+	body {width: 95%;}
+}
+
+@media only screen and (min-width: 992px) {
+	/* For desktop screen */
+	body {width: 90%;}
+	nav {padding-left: 3em;}
+	nav li, nav a {
+		list-style-type: default;
+		display: inline-block;
+		padding: 0.5em 1em 0.2em 1em;
+		font-size: 1em;
+	}
+	section {
+		position: relative;
+		padding: 3em 5em 5em 5em;
+		height: 50em;
+	}
+
+	section h1 {
+		line-height: 2em;
+		font-size: 2em;
+	}
+
+	section p {
+		line-height: 1.5em;
+		font-size: 1.2em;
+		padding-right: 1.5em;
+	}
+}

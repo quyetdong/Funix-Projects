@@ -1,0 +1,197 @@
+* {
+	box-sizing: border-box;
+	margin: 0px; 
+	padding: 0px;
+}
+
+body {	
+	width: 100%;
+	padding: 0px;
+	margin: auto;
+}
+
+header div.nav {
+	background-color: #3E5267;
+}
+
+header ul {
+	list-style-type: none;
+}
+
+header li {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 15px 3% 15px 0px;
+}
+
+header a {
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header a:hover {color: blue;}
+
+header li:first-child {padding-left: 5%;}
+
+div.banner {
+	position: relative;
+}
+
+div.banner img {
+	display: none;
+	position: absolute;
+	z-index: -1;
+}
+
+.textbanner {
+	padding-left: 5%;	
+	color: black;
+}
+
+div.banner h1{
+	padding-top: 30px;	
+	font-size: 36px;
+	font-family: Cutive, Sanchez, serif;	
+}
+
+div.banner p {
+	font-size: 20px;
+	padding-bottom: 55px;
+}
+
+div.content {	
+	padding-left: 4%;
+}
+
+div.header {
+	padding-top: 20px;
+	padding-bottom: 20px;	
+	font-size: 1.02em;
+}
+
+div.contimages p {
+		position: absolute;
+		font-weight: bold;
+		color: white;
+		}
+
+div.contimages img {
+	padding-bottom: 30px;
+	padding-right: 20px;
+}
+
+div.contimages p:nth-child(1) {
+	padding-top: 6em;
+	padding-left: 12em;
+}
+div.contimages p.fifthpic {
+	color: black;
+	padding-top: 8em;
+}
+
+div.footer {
+	padding-left: 4%;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+div.footer p {
+	padding-right: 50px;
+}
+
+img {
+	width: 90%;
+	height: auto;
+}
+
+div.footer a {
+	color: blue;
+	background-color: transparent;
+	tex-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* For tablet: */
+	body {width: 90%;}
+	header li:nth-child(3) {padding-left: 40%;}
+	.textbanner {padding-left: 0px;}
+	div.banner {
+		width: 92%;
+		padding: 0px;
+		margin: 0px 3% 0px 5%;
+		border-bottom: 2px solid grey;
+		}
+	img {width: 95%;}
+	div.contimages p:nth-child(1) {
+		padding-top: 4em;
+		padding-left: 9em;
+	}
+	div.contimages p.fifthpic {
+		color: black;
+		padding-top: 8em;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/* For desktop: */
+	body {width: 90%;}
+	div.banner {width: 100%; margin: 0px; padding: 0px; border: 0px;}
+	div.banner img {display: block; opacity: 0.8;}
+	img {display: block; width: 100%;}
+	.textbanner {
+		padding-left: 5%;	
+		color: black;
+	}
+	div.banner h1 {padding-top: 12%; line-height: 1.3em;}
+	div.banner p {margin: 0px; padding-bottom: 21%;}
+	header div.nav {background-color: transparent;}
+	header li:nth-child(3) {padding-left: 45%;}
+	header a {color: black; font-size: 0.9em;}
+	div.header {line-height: 1.7em;}	
+	div.content {background-color: #eeeeee;}
+	div.footer {
+		background-color: #f6f5f5;
+	}
+	div.contimages p {
+		position: absolute;
+		font-weight: bold;
+		color: white;
+		}
+	div.contimages p:nth-child(1) {
+		padding-top: 4em;
+		padding-left: 8em;
+	}
+	div.contimages p.fifthpic {
+		color: black;
+		padding-top: 5em;
+	}
+}
+
+[class*="col-"] {
+	/* For mobile phone: */
+    	width: 100%;
+	float: left;
+	padding: 0px;
+	margin: auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* For tablet: */
+	.col-t-1 {width: 16.66%;}
+	.col-t-2 {width: 33.33%;}
+	.col-t-3 {width: 50.0%;}
+	.col-t-4 {width: 66.66%;}
+	.col-t-5 {width: 83.33%;}
+	.col-t-6 {width: 100%;}
+}
+
+@media only screen and (min-width: 992px) {
+	/* For desktop: */
+	.col-1 {width: 16.66%;}
+	.col-2 {width: 33.33%;}
+	.col-3 {width: 50.0%;}
+	.col-4 {width: 66.66%;}
+	.col-5 {width: 83.33%;}
+	.col-6 {width: 100%;}
+}

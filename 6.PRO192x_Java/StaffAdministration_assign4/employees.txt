@@ -1,0 +1,5 @@
+No. |Fullname       |Section   |Level  |WorkDay/TeachingUnit |SalaryRate |Allowance |Salary  
+   1| dong van Quyet|        en| master|                 30.0|        3.0|     500.0|  4040.0
+   2|    Le minh Son|        vi| deputy|                 30.0|        3.0|    1000.0|  4090.0
+   3|   Le MINH Tien|       geo|  staff|                 30.0|        3.0|     500.0|  3590.0
+   4|     le nam hai|       lit| master|                 30.0|        3.0|     500.0|  4040.0

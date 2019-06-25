@@ -1,0 +1,16 @@
+/* CSS file */
+
+body {
+	width: 90%;
+	margin: auto;
+}
+span {
+	font-weight: bold;	
+}
+span.inform {
+	font-weight: normal;
+}
+div#nextbutton {
+	direction: rtl;
+	margin-right: 10em;
+}

@@ -1,0 +1,87 @@
+﻿* {
+	box-sizing: border-box;
+	margin: 0px; 
+	padding: 0px;
+}
+
+body {	
+	width: 100%;
+	padding: 0px;
+	margin: auto;
+}
+
+nav {padding-left: 0.5em;}
+
+nav li {
+	list-style-type: default;
+	display: inline-block;
+	padding: 0.8em;
+	font-size: 0.9em;
+}
+
+nav a {
+	color: black;
+	font-size: 0.9em;
+	font-family: Pacifico, cursive, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:hover {color: blue;}
+
+section {
+	position: relative;
+	margin: 0.1em;
+	padding: 1em 1em 0.5em 1em;
+	height: 16em;
+	background-color: #EAF6EF;
+}
+
+section h1 {
+	line-height: 1.5em;
+	font-size: 1.5em;
+}
+
+section p {font-size: 1.1em;}
+
+section ul {padding-left: 2em;}
+
+section a {
+	line-height: 1.5em;
+	font-size: 1.1em;
+	text-decoration: none;
+	color: blue;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* For tablet screen */
+	body {width: 95%;}
+}
+
+@media only screen and (min-width: 992px) {
+	/* For desktop screen */
+	body {width: 90%;}
+	nav {padding-left: 3em;}
+	nav li, nav a {
+		list-style-type: default;
+		display: inline-block;
+		padding: 0.5em 1em 0.2em 1em;
+		font-size: 1em;
+	}
+	section {
+		position: relative;
+		padding: 2em 5em 5em 5em;
+		height: 16em;
+	}
+
+	section h1 {
+		line-height: 2em;
+		font-size: 2em;
+	}
+
+	section p {
+		line-height: 1.5em;
+		font-size: 1.2em;
+		padding-right: 1.5em;
+	}
+}

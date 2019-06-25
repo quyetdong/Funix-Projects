@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='vi'>
+<head>
+	<title>Data Dropdown Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href='assign4_option2_css.css' type='text/css' rel='stylesheet'/>
+    <script src='jquery-3.2.1.min.js' type="text/javascript"></script>
+   	<script src='assign4_option2_javascript.js' type="text/javascript"></script>
+</head>
+
+<body>
+	<div id='dropdown_menu'>
+		<div id='dropdown_title'><div><p>Chọn số lượng</p></div><span id='dropdown_arrow'>&#x25BC;</span></div>
+		<div class='dhidden numOpt drop1'><span>1</span></div>
+		<div class='dhidden numOpt drop2'><span>2</span></div>
+		<div class='dhidden numOpt drop3'><span>3</span></div>
+		<div class='dhidden numOpt drop4'><span>4</span></div>
+	</div>
+	<br/>
+	<br/>
+	<form id='gradeTable' name="gradeTable">
+		<br/>
+		<h2 id='formTitle'>Form nhập liệu:</h2>
+		<div id='dataForm' class='fhidden'>
+		<ul class='inputInfor1 lhidden form1 form2 form3 form4'>
+			<li><span class='inputItem'>Họ tên</span><input type='text' name="fullName1"><span class='hidden inpInstr' id='inpName1'>Họ tên bắt buộc nhập</span></li>
+			<li><span class='inputItem'>Lớp</span><input type='text' name="className1"><span class='hidden inpInstr' id='inpClass1'>Lớp học bắt buộc nhập</span></li>
+			<li><span class='inputItem'>Email</span><input type='email' name="emailAdd1"><span class='hidden inpInstr' id='inpEmail1'>Email phải nhập và nhập đúng định dạng</span></li>
+			<li><span class='inputItem'>Số điện thoại</span><input type='text' name="phoneNum1"><span class='hidden inpInstr' id='inpPhoneNum1'>Số điện thoại phải nhập và nhập đúng định dạng</span></li>
+			<li><span class='inputItem'>Điểm Văn</span><input type='number' name="literature1"><span class='hidden inpInstr' id='inpLiterature1'>Điểm Văn phải nhập và phải là số từ 0 đến 10</span></li>
+			<li><span class='inputItem'>Điểm Đạo Đức</span><input type='number' name="morality1"><span class='hidden inpInstr' id='inpMoral1'>Điểm Đạo Đức phải nhập và phải là số từ 0 đến 10</span></li>
+			<li><span class='inputItem'>Điểm Lập Trình</span><input type='number' name="programming1"><span class='hidden inpInstr' id='inpProgram1'>Điểm Lập Trình phải nhập và phải là số từ 0 đến 10</span></li>
+		</ul>
+		<ul class='inputInfor2 lhidden form2 form3 form4'>
+			<li><span class='inputItem'>Họ tên</span><input type='text' name="fullName2"><span class='hidden inpInstr' id='inpName2'>Họ tên bắt buộc nhập</span></li>
+			<li><span class='inputItem'>Lớp</span><input type='text' name="className2"><span class='hidden inpInstr' id='inpClass2'>Lớp học bắt buộc nhập</span></li>
+			<li><span class='inputItem'>Email</span><input type='email' name="emailAdd2"><span class='hidden inpInstr' id='inpEmail2'>Email phải nhập và nhập đúng định dạng</span></li>
+			<li><span class='inputItem'>Số điện thoại</span><input type='text' name="phoneNum2"><span class='hidden inpInstr' id='inpPhoneNum2'>Số điện thoại phải nhập và nhập đúng định dạng</span></li>
+			<li><span class='inputItem'>Điểm Văn</span><input type='number' name="literature2"><span class='hidden inpInstr' id='inpLiterature2'>Điểm Văn phải nhập và phải là số từ 0 đến 10</span></li>
+			<li><span class='inputItem'>Điểm Đạo Đức</span><input type='number' name="morality2"><span class='hidden inpInstr' id='inpMoral2'>Điểm Đạo Đức phải nhập và phải là số từ 0 đến 10</span></li>
+			<li><span class='inputItem'>Điểm Lập Trình</span><input type='number' name="programming2"><span class='hidden inpInstr' id='inpProgram2'>Điểm Lập Trình phải nhập và phải là số từ 0 đến 10</span></li>
+		</ul>
+		<ul class='inputInfor3 lhidden form3 form4'>
+			<li><span class='inputItem'>Họ tên</span><input type='text' name="fullName3" size='20'><span class='hidden inpInstr' id='inpName3'>Họ tên bắt buộc nhập</span></li>
+			<li><span class='inputItem'>Lớp</span><input type='text' name="className3"><span class='hidden inpInstr' id='inpClass3'>Lớp học bắt buộc nhập</span></li>
+			<li><span class='inputItem'>Email</span><input type='email' name="emailAdd3"><span class='hidden inpInstr' id='inpEmail3'>Email phải nhập và nhập đúng định dạng</span></li>
+			<li><span class='inputItem'>Số điện thoại</span><input type='text' name="phoneNum3"><span class='hidden inpInstr' id='inpPhoneNum3'>Số điện thoại phải nhập và nhập đúng định dạng</span></li>
+			<li><span class='inputItem'>Điểm Văn</span><input type='number' name="literature3"><span class='hidden inpInstr' id='inpLiterature3'>Điểm Văn phải nhập và phải là số từ 0 đến 10</span></li>
+			<li><span class='inputItem'>Điểm Đạo Đức</span><input type='number' name="morality3"><span class='hidden inpInstr' id='inpMoral3'>Điểm Đạo Đức phải nhập và phải là số từ 0 đến 10</span></li>
+			<li><span class='inputItem'>Điểm Lập Trình</span><input type='number' name="programming3"><span class='hidden inpInstr' id='inpProgram3'>Điểm Lập Trình phải nhập và phải là số từ 0 đến 10</span></li>
+		</ul>
+		<ul class='inputInfor4 lhidden form4'>
+			<li><span class='inputItem'>Họ tên</span><input type='text' name="fullName4"><span class='hidden inpInstr' id='inpName4'>Họ tên bắt buộc nhập</span></li>
+			<li><span class='inputItem'>Lớp</span><input type='text' name="className4"><span class='hidden inpInstr' id='inpClass4'>Lớp học bắt buộc nhập</span></li>
+			<li><span class='inputItem'>Email</span><input type='email' name="emailAdd4"><span class='hidden inpInstr' id='inpEmail4'>Email phải nhập và nhập đúng định dạng</span></li>
+			<li><span class='inputItem'>Số điện thoại</span><input type='text' name="phoneNum4"><span class='hidden inpInstr' id='inpPhoneNum4'>Số điện thoại phải nhập và nhập đúng định dạng</span></li>
+			<li><span class='inputItem'>Điểm Văn</span><input type='number' name="literature4"><span class='hidden inpInstr' id='inpLiterature4'>Điểm Văn phải nhập và phải là số từ 0 đến 10</span></li>
+			<li><span class='inputItem'>Điểm Đạo Đức</span><input type='number' name="morality4"><span class='hidden inpInstr' id='inpMoral4'>Điểm Đạo Đức phải nhập và phải là số từ 0 đến 10</span></li>
+			<li><span class='inputItem'>Điểm Lập Trình</span><input type='number' name="programming4"><span class='hidden inpInstr' id='inpProgram4'>Điểm Lập Trình phải nhập và phải là số từ 0 đến 10</span></li>
+		</ul>
+			<input class='process' id='button1' type='button' name="send" value='Nhập'>
+		</div>
+	</form>
+	
+	<section id='gradeData'>
+		<h2 id='tableTitle'>Danh sách học viên:</h2>
+		<div class='table'>
+			<table>
+				<tr>
+					<th class='indexCol'>STT</th>
+					<th class='studentCol'>Họ tên</th>
+					<th class='classCol'>Lớp</th>
+					<th class='emailCol'>Email</th>
+					<th class='phoneCol'>SDT</th>
+					<th class='literatureCol'>Văn</th>
+					<th class='moralCol'>Đạo Đức</th>
+					<th class='programCol'>Lập Trình</th>
+					<th class='averCol'>Trung Bình</th>
+				</tr>
+			</table>
+			
+			<div id='inpProcess'>
+				<input class='process' type='button' id='goodStudent' value='Đánh giá HS'>
+				<input class='process' type='button' id='average' value='Tính TB'>
+			</div>
+		</div>
+	</section>
+
+
+
+</body>
+</html>

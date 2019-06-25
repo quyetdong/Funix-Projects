@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="csscodes/login.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+  
+</head>
+
+<body>
+	<nav>
+		<li><a href="index.htm">HOME</a></li>
+		<li><a href="#">BROWSE</a></li>
+		<li><a href="#">SIGNUP</a></li>
+		<li><a href="brand.htm">BRAND</a></li>
+		<li><a href="help.htm">HELP</a></li>
+	</nav>
+	<div id="content">
+	<form>
+	<ul>
+		<li><span class="input">Username</span> <input type="text" id="username" value="" /></li>
+		<li><span class="input">Password</span> <input type="password" id="password" value="" /></li>
+		<li><div><input type="button" id="login" value="Login" onclick="checking()" /></div></li>
+	</ul>
+	</form>
+	<span id="usernotify"></span>
+	<span id="passnotify"></span>
+	</div>
+	
+	<script>
+		var userName=document.getElementById("username");
+		var passWord=document.getElementById("password");
+		var userNotify=document.getElementById("usernotify");
+		var passNotify=document.getElementById("passnotify");
+		
+		function checking() {
+			if(userName.value.trim() == "") {userNotify.innerHTML = "Missing Email! <br/>";}
+				else {userNotify.innerHTML = "";}
+			if(passWord.value == "") {passNotify.innerHTML = "Missing Password!";}
+				else if(passWord.value.length < 6) {passNotify.innerHTML = "Password is too short, please input at least 6 characters!";}
+				else {passNotify.innerHTML="";}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <link href="assign1.css" type="text/css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ứng dụng thu thập thông tin cá nhân</title>
+</head>
+<body>
+	<form>
+	<h1>Ứng dụng thu thập thông tin cá nhân</h1>
+	<!-- <span id="name">Tên của bạn:</span> <span id="nameinput"></span><br/> -->
+	<span id="nameinput"></span><br/>
+	<span id="cityinput"></span><br/>
+	<span id="phonenuminput"></span><br/>
+	</form>
+	<script>
+		alert("Chào mừng đến với ứng dụng Javascript đầu tiên");
+	</script>
+	<script>
+		var name = prompt("Hãy nhập tên của bạn");
+		document.getElementById("nameinput").innerHTML = '<span id="name" class="inform">Tên của bạn:</span>' + name;
+	</script>
+	<script>
+		var city = prompt("Hãy nhập thành phố bạn đang sống");
+		document.getElementById("cityinput").innerHTML = '<span id="city" class="inform">Thành phố:</span>' + city;
+	</script>
+	<script>
+		var phonenum = prompt("Hãy nhập số điện thoại của bạn");
+		document.getElementById("phonenuminput").innerHTML = '<span id="phonenum" class="inform">Số điện thoại:</span>' + phonenum;
+	</script>
+	<script>
+		alert("Cám ơn bạn đã cung cấp thông tin");
+	</script>
+	<script>
+		function congrat() {
+			document.write("Congratulation for finish this survey, see you next time ^^^!");	
+		}
+	</script>
+	
+	<div id="nextbutton"><input type = "button" name = "nextstep"  value = "Bước tiếp theo" onclick = "congrat()"/></div>
+
+</body>
+</html>
